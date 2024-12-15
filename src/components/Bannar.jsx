@@ -10,7 +10,7 @@ const Bannar = () => {
     {/* Left Side */}
     <div className="md:flex-1 p-4">
       <h1 className="text-4xl font-bold text-secondary mb-4">
-        Welcome to <span className='text-primary'>Career</span>Connect
+        Welcome to <span className='text-primary text-[40px]'>Career</span>Connect
       </h1>
       <p className="text-lg text-gray-600 mb-6">
         Your journey to a successful career starts here. Find the best
@@ -18,10 +18,10 @@ const Bannar = () => {
       </p>
       <div className="flex items-center">
         <input
-          type="text"
+        type="text"
           placeholder="Search for jobs, skills, companies..."
           
-          className="p-3 text-lg border border-gray-300 rounded-l-md w-96"
+          className="p-3 text-lg border border-gray-300 rounded-l-md w-auto md:w-96"
         />
         <button className="p-3 bg-primary text-white rounded-r-md hover:bg-blue-700 transition duration-300">
           Search
@@ -32,7 +32,7 @@ const Bannar = () => {
     {/* Right Side */}
     <div className="md:flex-1 w-full flex justify-center items-center mt-6 lg:mt-0">
       {/* Responsive image container */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-start md:justify-center gap-4">
         <motion.img
           src={team1}
           animate={{ y: [50, 100, 50] }}
@@ -41,7 +41,7 @@ const Bannar = () => {
         />
         <motion.img
           src={team2}
-          animate={{ x: [50, 100, 50] }}
+          animate={{ x: [100, 150, 100] }}
           transition={{ duration: 10, delay: 5, repeat: Infinity }}
           className="w-48 sm:w-64 md:w-72 lg:w-80 rounded-t-[40px] border-l-4 border-b-4 border-primary rounded-br-[40px] shadow-2xl"
         />
