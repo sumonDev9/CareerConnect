@@ -5,7 +5,7 @@ const Register = () => {
   
     return (
         <div className='hero  py-10'>
-                <div className="flex   rounded-md items-start">
+                <div className="flex rounded-md items-start">
                 <div className='md:w-[480px] md:block  shadow-2xl bg-white rounded-l-lg hidden items-center justify-center p-6'>
                    <div className='text-center my-[182px] space-y-5'>
                    <h1 className='text-secondary font-bold text-2xl'>
@@ -88,7 +88,7 @@ const Register = () => {
 
                     </div>
                     <div>
-                        <p className='text-center text-base pt-3 md:text-lg '><span className='text-black opacity-60 ml-8'>Already have an account?</span> <Link to='/signin' className='text-primary hover:underline'>Login here</Link></p>
+                        <p className='text-center text-base pt-3 md:text-lg '><span className='text-black opacity-60 ml-8'>Already have an account?</span> <Link to='/login' className='text-primary hover:underline'>Login here</Link></p>
                     </div>
 
                 </div>
